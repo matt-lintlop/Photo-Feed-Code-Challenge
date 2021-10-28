@@ -130,6 +130,7 @@
                             <outlet property="delegate" destination="Ll7-Wz-xkp" id="ydL-R7-70n"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gD-32-fw9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="1GO-5g-GcW">
