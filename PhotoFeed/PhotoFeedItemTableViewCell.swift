@@ -78,5 +78,12 @@ class PhotoFeedItemTableViewCell: UITableViewCell {
             }
         }
     }
+    
+    override func prepareForReuse() {
+        self.poster = nil
+        self.titleLabel = nil
+        self.scoreLabel = nil
+        self.commentNumberLabel = nil
+    }
 
 }
