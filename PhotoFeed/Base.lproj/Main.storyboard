@@ -15,9 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <activityIndicatorView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="nZt-Lk-O0f">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoFeedItemCell" rowHeight="230" id="CWb-Bh-ZNZ" customClass="PhotoFeedItemTableViewCell" customModule="PhotoFeed" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="230"/>
+                                <rect key="frame" x="0.0" y="64.5" width="414" height="230"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CWb-Bh-ZNZ" translatesAutoresizingMaskIntoConstraints="NO" id="a9P-VP-aIu">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
@@ -114,12 +118,12 @@
                                     <constraint firstItem="a9P-VP-aIu" firstAttribute="top" secondItem="CWb-Bh-ZNZ" secondAttribute="top" id="szl-hk-Tz0"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="commentNumberLabel" destination="SPS-bV-PAw" id="GlW-ry-WHp"/>
+                                    <outlet property="commentNumber" destination="SPS-bV-PAw" id="Dit-CE-ctt"/>
                                     <outlet property="imageViewHeightConstraint" destination="wWY-CH-Ieg" id="QuR-fp-faW"/>
                                     <outlet property="imageViewWidthConstraint" destination="FqN-Ps-YS8" id="bgi-gR-q1w"/>
                                     <outlet property="poster" destination="9Nw-vX-0nr" id="Byl-Ah-P0o"/>
-                                    <outlet property="scoreLabel" destination="KXO-DM-fgT" id="pXI-8S-RnW"/>
-                                    <outlet property="titleLabel" destination="gGE-os-lT0" id="hec-HK-Nb0"/>
+                                    <outlet property="score" destination="KXO-DM-fgT" id="Z8o-LJ-xc3"/>
+                                    <outlet property="title" destination="gGE-os-lT0" id="27K-S4-ikO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -129,6 +133,9 @@
                         </connections>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="nZt-Lk-O0f" id="3AS-vQ-bzl"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gD-32-fw9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="1GO-5g-GcW">

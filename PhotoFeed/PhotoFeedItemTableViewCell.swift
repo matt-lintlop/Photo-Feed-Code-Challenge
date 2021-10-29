@@ -9,13 +9,12 @@ import UIKit
 
 class PhotoFeedItemTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var commentNumber: UILabel!
+    @IBOutlet weak var score: UILabel!
+    @IBOutlet weak var title: UILabel!
     @IBOutlet weak var poster: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var commentNumberLabel: UILabel!
     @IBOutlet weak var imageViewWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var contentViewHeightConstraint: NSLayoutConstraint!
 
     var photoFeedItem: PhotoFeedItem?
     
@@ -35,13 +34,13 @@ class PhotoFeedItemTableViewCell: UITableViewCell {
         
         DispatchQueue.main.async {
             if let title = photoFeedItem.title {
-                self.titleLabel.text = title
+                self.title.text = title
             }
             if let score = photoFeedItem.score {
-                self.scoreLabel.text = "\(score)"
+                self.score.text = "\(score)"
             }
             if let commentNumber = photoFeedItem.commentNumber {
-                self.commentNumberLabel.text = "\(commentNumber)"
+                self.commentNumber.text = "\(commentNumber)"
             }
         }
         
@@ -80,10 +79,10 @@ class PhotoFeedItemTableViewCell: UITableViewCell {
     }
     
     override func prepareForReuse() {
-        self.poster = nil
-        self.titleLabel = nil
-        self.scoreLabel = nil
-        self.commentNumberLabel = nil
+        self.poster.image = nil
+        self.title.text = nil
+        self.score.text = nil
+        self.commentNumber.text = nil
     }
 
 }

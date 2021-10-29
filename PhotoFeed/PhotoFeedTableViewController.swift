@@ -9,6 +9,8 @@ import UIKit
 
 class PhotoFeedTableViewController: UITableViewController {
 
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+    
     var photoFeeds = [PhotoFeed]()
     let group = DispatchGroup()
     
@@ -20,7 +22,7 @@ class PhotoFeedTableViewController: UITableViewController {
         self.fetchNextPhotoFeed()
         
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 241
+        tableView.estimatedRowHeight = 200
     }
 
     // MARK: - Photo Feed
@@ -96,9 +98,9 @@ class PhotoFeedTableViewController: UITableViewController {
                                                        for: indexPath) as? PhotoFeedItemTableViewCell else {
             return UITableViewCell()
         }
+        cell.prepareForReuse()
         
         cell.setPhotoFeedItem(photoFeedItem)
-        
         
         let photoFeedItemCount = photoFeedItemCount()
         
