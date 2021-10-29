@@ -78,9 +78,5 @@ class PhotoFeedItemTableViewCell: UITableViewCell {
             }
         }
     }
- 
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        contentViewHeightConstraint.constant = scoreLabel.frame.maxY
-   }
+
 }

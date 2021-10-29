@@ -93,7 +93,7 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="SPS-bV-PAw" secondAttribute="trailing" constant="10" id="Iba-64-1LV"/>
                                         <constraint firstItem="gGE-os-lT0" firstAttribute="leading" secondItem="a9P-VP-aIu" secondAttribute="leading" constant="10" id="Kem-M3-nz9"/>
-                                        <constraint firstAttribute="height" constant="230" id="Nhw-vW-ARk"/>
+                                        <constraint firstAttribute="bottom" secondItem="FoP-LJ-lSF" secondAttribute="bottom" constant="8.5" id="LaO-NK-3Y2"/>
                                         <constraint firstItem="gGE-os-lT0" firstAttribute="top" secondItem="a9P-VP-aIu" secondAttribute="top" constant="5" id="Nm2-H8-YRF"/>
                                         <constraint firstItem="KXO-DM-fgT" firstAttribute="top" secondItem="FoP-LJ-lSF" secondAttribute="top" id="UKe-cm-tbK"/>
                                         <constraint firstItem="9Nw-vX-0nr" firstAttribute="top" secondItem="gGE-os-lT0" secondAttribute="bottom" constant="15.5" id="Urb-wh-79N"/>
@@ -112,11 +112,9 @@
                                     <constraint firstItem="a9P-VP-aIu" firstAttribute="leading" secondItem="CWb-Bh-ZNZ" secondAttribute="leading" id="ILp-zu-oc1"/>
                                     <constraint firstAttribute="trailing" secondItem="a9P-VP-aIu" secondAttribute="trailing" id="flM-qp-FWl"/>
                                     <constraint firstItem="a9P-VP-aIu" firstAttribute="top" secondItem="CWb-Bh-ZNZ" secondAttribute="top" id="szl-hk-Tz0"/>
-                                    <constraint firstItem="a9P-VP-aIu" firstAttribute="top" secondItem="CWb-Bh-ZNZ" secondAttribute="top" id="uum-bz-NQ0"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="commentNumberLabel" destination="SPS-bV-PAw" id="GlW-ry-WHp"/>
-                                    <outlet property="contentViewHeightConstraint" destination="Nhw-vW-ARk" id="fKi-UZ-xxn"/>
                                     <outlet property="imageViewHeightConstraint" destination="wWY-CH-Ieg" id="QuR-fp-faW"/>
                                     <outlet property="imageViewWidthConstraint" destination="FqN-Ps-YS8" id="bgi-gR-q1w"/>
                                     <outlet property="poster" destination="9Nw-vX-0nr" id="Byl-Ah-P0o"/>
