@@ -48,6 +48,11 @@ class PhotoFeedItemTableViewCell: UITableViewCell {
             self.loadImage(withPath: imagePath) { image in
                 if let image = image {
                     DispatchQueue.main.async {
+                        if let aspectRatio = self.photoFeedItem?.aspectRatio {
+                            self.imageViewWidthConstraint.constant = self.contentView.frame.width
+                            self.imageViewHeightConstraint.constant = self.contentView.frame.width / aspectRatio
+                            self.poster.setNeedsLayout()
+                        }
                         self.poster.image = image
                         self.poster.setNeedsDisplay()
                     }

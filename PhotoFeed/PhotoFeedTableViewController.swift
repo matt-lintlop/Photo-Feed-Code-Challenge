@@ -28,7 +28,9 @@ class PhotoFeedTableViewController: UITableViewController {
     // MARK: - Photo Feed
 
     func fetchNextPhotoFeed() {
-               
+    
+        showActivityIndicator()
+
         group.wait()
         group.enter()
         
@@ -48,6 +50,7 @@ class PhotoFeedTableViewController: UITableViewController {
                 }
                 print("Success! Fetched \(photoFeed.photoFeedItemCount) photo feed items")
             }
+            self.hideActivityIndicator()
         }
     }
     
@@ -109,6 +112,18 @@ class PhotoFeedTableViewController: UITableViewController {
         }
 
         return cell
+    }
+
+    func showActivityIndicator() {
+        DispatchQueue.main.async {
+            self.activityIndicatorView.startAnimating()
+        }
+    }
+
+    func hideActivityIndicator() {
+        DispatchQueue.main.async {
+            self.activityIndicatorView.stopAnimating()
+        }
     }
 
     /*

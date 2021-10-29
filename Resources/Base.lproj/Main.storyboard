@@ -15,19 +15,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <activityIndicatorView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="nZt-Lk-O0f">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoFeedItemCell" rowHeight="230" id="CWb-Bh-ZNZ" customClass="PhotoFeedItemTableViewCell" customModule="PhotoFeed" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64.5" width="414" height="230"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="230"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CWb-Bh-ZNZ" translatesAutoresizingMaskIntoConstraints="NO" id="a9P-VP-aIu">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGE-os-lT0">
-                                            <rect key="frame" x="10" y="5" width="394" height="20.5"/>
+                                            <rect key="frame" x="10" y="10.5" width="394" height="20.5"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Title">
                                                     <attributes>
@@ -39,11 +35,11 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPS-bV-PAw">
-                                            <rect key="frame" x="375.5" y="201" width="28.5" height="20.5"/>
+                                            <rect key="frame" x="381.5" y="204.5" width="22.5" height="17"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="777">
                                                     <attributes>
-                                                        <font key="NSFont" metaFont="system" size="17"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -51,11 +47,11 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoP-LJ-lSF">
-                                            <rect key="frame" x="10" y="201" width="49" height="20.5"/>
+                                            <rect key="frame" x="10" y="204.5" width="38.5" height="17"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Score:">
                                                     <attributes>
-                                                        <font key="NSFont" metaFont="system" size="17"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -63,11 +59,11 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXO-DM-fgT">
-                                            <rect key="frame" x="67" y="201" width="28" height="20.5"/>
+                                            <rect key="frame" x="56.5" y="204.5" width="22.5" height="17"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="123">
                                                     <attributes>
-                                                        <font key="NSFont" metaFont="system" size="17"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -75,11 +71,11 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Am-9E-cDK">
-                                            <rect key="frame" x="278" y="201" width="87.5" height="20.5"/>
+                                            <rect key="frame" x="302" y="204.5" width="69.5" height="17"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Comments:">
                                                     <attributes>
-                                                        <font key="NSFont" metaFont="system" size="17"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -87,7 +83,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Nw-vX-0nr">
-                                            <rect key="frame" x="137" y="41" width="140" height="140"/>
+                                            <rect key="frame" x="137" y="46.5" width="140" height="140"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="140" id="FqN-Ps-YS8"/>
                                                 <constraint firstAttribute="height" constant="140" id="wWY-CH-Ieg"/>
@@ -96,9 +92,9 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="SPS-bV-PAw" secondAttribute="trailing" constant="10" id="Iba-64-1LV"/>
+                                        <constraint firstItem="gGE-os-lT0" firstAttribute="top" secondItem="a9P-VP-aIu" secondAttribute="top" constant="10.5" id="Io8-Fu-lqH"/>
                                         <constraint firstItem="gGE-os-lT0" firstAttribute="leading" secondItem="a9P-VP-aIu" secondAttribute="leading" constant="10" id="Kem-M3-nz9"/>
                                         <constraint firstAttribute="bottom" secondItem="FoP-LJ-lSF" secondAttribute="bottom" constant="8.5" id="LaO-NK-3Y2"/>
-                                        <constraint firstItem="gGE-os-lT0" firstAttribute="top" secondItem="a9P-VP-aIu" secondAttribute="top" constant="5" id="Nm2-H8-YRF"/>
                                         <constraint firstItem="KXO-DM-fgT" firstAttribute="top" secondItem="FoP-LJ-lSF" secondAttribute="top" id="UKe-cm-tbK"/>
                                         <constraint firstItem="9Nw-vX-0nr" firstAttribute="top" secondItem="gGE-os-lT0" secondAttribute="bottom" constant="15.5" id="Urb-wh-79N"/>
                                         <constraint firstItem="7Am-9E-cDK" firstAttribute="top" secondItem="FoP-LJ-lSF" secondAttribute="top" id="V2p-vF-fXV"/>
@@ -106,7 +102,7 @@
                                         <constraint firstItem="SPS-bV-PAw" firstAttribute="top" secondItem="7Am-9E-cDK" secondAttribute="top" id="b8J-vH-6b8"/>
                                         <constraint firstItem="FoP-LJ-lSF" firstAttribute="leading" secondItem="a9P-VP-aIu" secondAttribute="leading" constant="10" id="gha-Ba-QiJ"/>
                                         <constraint firstItem="SPS-bV-PAw" firstAttribute="leading" secondItem="7Am-9E-cDK" secondAttribute="trailing" constant="10" id="nYP-Pc-h5o"/>
-                                        <constraint firstItem="FoP-LJ-lSF" firstAttribute="top" secondItem="9Nw-vX-0nr" secondAttribute="bottom" constant="20" id="q1g-Wo-vol"/>
+                                        <constraint firstItem="FoP-LJ-lSF" firstAttribute="top" secondItem="9Nw-vX-0nr" secondAttribute="bottom" constant="18" id="q1g-Wo-vol"/>
                                         <constraint firstItem="9Nw-vX-0nr" firstAttribute="centerX" secondItem="a9P-VP-aIu" secondAttribute="centerX" id="rDZ-CQ-c7u"/>
                                         <constraint firstItem="KXO-DM-fgT" firstAttribute="leading" secondItem="FoP-LJ-lSF" secondAttribute="trailing" constant="8" symbolic="YES" id="tXK-Ni-pm7"/>
                                     </constraints>
@@ -115,6 +111,7 @@
                                     <constraint firstAttribute="bottom" secondItem="a9P-VP-aIu" secondAttribute="bottom" id="1xn-MX-4Rr"/>
                                     <constraint firstItem="a9P-VP-aIu" firstAttribute="leading" secondItem="CWb-Bh-ZNZ" secondAttribute="leading" id="ILp-zu-oc1"/>
                                     <constraint firstAttribute="trailing" secondItem="a9P-VP-aIu" secondAttribute="trailing" id="flM-qp-FWl"/>
+                                    <constraint firstAttribute="bottom" secondItem="a9P-VP-aIu" secondAttribute="bottom" id="kjN-nn-vfF"/>
                                     <constraint firstItem="a9P-VP-aIu" firstAttribute="top" secondItem="CWb-Bh-ZNZ" secondAttribute="top" id="szl-hk-Tz0"/>
                                 </constraints>
                                 <connections>
@@ -138,6 +135,10 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gD-32-fw9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="nZt-Lk-O0f">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="1GO-5g-GcW">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
